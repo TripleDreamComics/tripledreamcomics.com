@@ -1,0 +1,215 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: purple;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+/*
+html,
+body {
+  height: 100%;
+   margin: 0;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-image: linear-gradient(to bottom, #a6c1ee 0%, #fbc2eb 100%);
+}*/
+
+body:before {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	background:#a6c1ee;
+	background: linear-gradient(to bottom, #a6c1ee, #fbc2eb);
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.bg-index{
+  	/*background = gradient + image pattern combo*/
+  background: linear-gradient(rgba(255, 105, 180, 1), rgba(3, 246, 249, 1));
+}
+
+.bg-mel{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.bg-katie{
+  background: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.bg-lauren{
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
+.bg-curtis{
+  background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+  font-weight: 700;
+  color: white;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: center;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.jumbotron{
+  background-color: white;
+  color:black;
+  text-shadow: none;
+  text-align: left;
+}
+
+.textlink{
+  color: blue;
+}
+
+.fa.fa-twitter{
+  transform:scale(2.0,2.0);
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 20px;
+  color:	#1DA1F2;
+}
+
+.fa.fa-instagram {
+  margin-top: 10px;
+  margin-right: 20px;
+  transform:scale(2.0,2.0);
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa.fa-linkedin {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
+  transform:scale(2.0,2.0);
+  color: #2867B2;
+}
+
+.fa.fa-home {
+  margin-left: 5px;
+  margin-top: 10px;
+  margin-right: 20px;
+  transform:scale(2.0,2.0);
+  color: #ff69b4;
+}
+.fa.fa-shopping-cart {
+  margin-top: 10px;
+  margin-right: 20px;
+  transform:scale(2.0,2.0);
+  color: #8b0089;
+}
+
+.fa.fa-etsy {
+  margin-top: 10px;
+  margin-right: 15px;
+  transform:scale(1.8,1.8);
+  color: #eb6d20;
+}
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
