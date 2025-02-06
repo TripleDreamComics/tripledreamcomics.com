@@ -53,9 +53,12 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   color: #fff;
-   /*-webkit-text-stroke: .5px #273eb4;*/
-  text-shadow: 0 .2rem .4rem rgba(0, 0, 0, .5);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.album{
+    border-radius: .3rem;
 }
 
 .bg-index{
@@ -77,6 +80,13 @@ body {
 
 .bg-curtis{
   background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+}
+
+.card{
+  color:black;
+  text-shadow: none;
+  text-align: center;
+  border-radius: .3rem;
 }
 
 .center {
@@ -154,9 +164,6 @@ body {
   color:black;
   text-shadow: none;
   text-align: left;
-  border-style: solid;
-  border-width: thin;
-  border-color: #273eb4;
 }
 
 .textlink{
